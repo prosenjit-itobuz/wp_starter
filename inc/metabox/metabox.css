@@ -1,0 +1,18 @@
+.metabox-tab-content {
+	display: none;
+}
+.metabox-tab-container .toggle-indicator:before {
+	content: "\f140" !important;
+}
+.metabox-tab-container.metabox-tab-openstate .toggle-indicator:before{
+	content: "\f142" !important;
+}
+.metabox-tab-container .cmb-type-title  {
+	cursor: pointer;
+	background-color: #F7F7F7 !important;
+	padding: 0 0 0 10px !important; 
+}
+
+.metabox-tab-container .cmb-type-title .cmb2-metabox-title {
+	padding-top: 10px;
+}
