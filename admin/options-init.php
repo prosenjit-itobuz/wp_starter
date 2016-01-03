@@ -193,7 +193,30 @@
         )
     ) );
 
-   
+    Redux::setSection( $opt_name, array(
+        'title'      => __( 'General settings', 'redux-framework-demo' ),
+        'id'         => 'opt-general-settings',
+    ) );
+    Redux::setSection( $opt_name, array(
+        'title'      => __( 'RTL', 'redux-framework-demo' ),
+        'id'         => 'opt-rtl',
+        'subsection' => true,
+        'fields'     => array(
+            array(
+                'id'       => 'opt-rtl-status',
+                'type'     => 'checkbox',
+                'title'    => __( 'Enable RTL support', 'redux-framework-demo' ),
+                'default'  => '0',
+            ),
+             array(
+                'id'       => 'opt-rtl-editor',
+                'type'     => 'checkbox',
+                'title'    => __( 'Enable RTL support', 'redux-framework-demo' ),
+                'default'  => '0',
+            ),
+        )
+    ) );
+
     /*
      * <--- END SECTIONS
      */

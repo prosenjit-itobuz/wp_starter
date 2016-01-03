@@ -20,9 +20,16 @@
 <?php wp_head(); ?>
 
 </head>
+<?php 
+global $theme_options;
+$rtl_support = $theme_options['opt-rtl-status'];
+$rtl_body = '';
+if ($rtl_support==='1') {
+	$rtl_body = 'rtl';
+}
+ ?>
 
-
-<body <?php body_class(); ?>>
+<body <?php body_class($rtl_body); ?>>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text hidden" href="#content"><?php esc_html_e( 'Skip to content', 'wpautomate' ); ?></a>
 

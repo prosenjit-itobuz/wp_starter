@@ -187,3 +187,12 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
+/*
+Editor RTL Support
+*/
+$theme_options = get_option('theme_options');
+global $theme_options;
+$rtl_editor_support = $theme_options['opt-rtl-editor'];
+if ($rtl_editor_support==='1') {
+	require_once get_template_directory() . '/inc/plugins/wp-rtl.php';
+}
